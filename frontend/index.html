@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Photoshop</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/socket.io.min.js" crossorigin="anonymous"></script>
+    <script defer src="./js/global_var.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/button.js"></script>
+</head>
+<body>
+<div class="nav-opts">
+    <input type="file" id="image-input" style="display:none" />
+    <label for="image-input">
+        Upload Image
+    </label>
+
+    <input type="button" id="image-download" style="display:none" />
+    <label for="image-download">
+        Download Image
+    </label>
+</div>
+
+<div class="display">
+    <div class="tool">
+        <div class="tools">
+            <div>
+                <button class="modifier-btn" name="reset-btn">
+                    Reset
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="invert-btn">
+                    Negatif
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="grayscale-btn">
+                    Grayscale
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="complement-btn">
+                    Komplemen
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="rotleft-btn">
+                    <img src="./res/rotccw.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="rotright-btn">
+                    <img src="./res/rotcw.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="flipud-btn">
+                    <img src="./res/flipud.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="fliplr-btn">
+                    <img src="./res/fliplr.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="zoomin-btn">
+                    <img src="./res/zoomin.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="zoomout-btn">
+                    <img src="./res/zoomout.png" />
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="brightening-btn">
+                    Brighten
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="contrasting-btn">
+                    Contrast Stretching
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="logtrans-btn">
+                    Transformasi Log
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="exptrans-btn">
+                    Transformasi Pangkat
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="gaussianblur-btn">
+                    Gaussian Blur
+                </button>
+            </div>
+            <div>
+                <button class="modifier-btn" name="sharpening-btn">
+                    Penajaman
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="image">
+        <img class="output" src="" alt="no image" />
+    </div>
+</div>
+
+</body>
+</html>
